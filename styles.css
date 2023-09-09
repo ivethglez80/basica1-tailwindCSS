@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.bg-image1{
+    background-image: url("./img/fondo-generico.png");
+}
+.text-brown{
+    color: #BB9979;
+}
+.bg-cierre{
+    background-color: #BB9979;
+}
+
+
+

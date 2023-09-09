@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>responsive landing page w tailwind</title>
+</head>
+<body>
+<!-- barra inicial -->
+   <nav class="bg-gray-200 p-3 flex">
+    <img src="./img/logo-generico.png" alt="logo generico" class="w-7 ml-3">
+    <h1 class="pl-6 font-bold ">Nombre de la empresa</h1>
+    <button class="bg-gray-300 hover:bg-gray-100 text-yellow-700 hover:text-gray-500 px-2 font-light text-xs rounded ml-auto mr-2">CALL ACTION</button>
+   </nav>
+
+<!-- acceso a whatsapp -->
+   <a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP&text=Quiero%20m%C3%A1s%20informaci%C3%B3n" 
+           class="fixed bottom-4 right-4 z-50 ">
+            <img src="./img/wpp-logo.png" alt="Logo de WhatsApp" class="w-12 h-12 md:w-16 md:h-16 opacity-50 transition-transform transform translate-y-0 hover:translate-y-2 hover:opacity-100" />
+    </a>
+
+<!-- imagen de background inicial     -->
+   <div class="bg-image1 bg-cover bg-center h-screen w-screen grid grid-rows-5 gap-4">
+    <h1 class="row-start-2  text-brown text-5xl ml-10">Slogan o frase enganche (USP)</h1>
+    <h4 class="row-start-3 pl-10 text-2xl">
+        Texto soporte del la USP<br>
+        Lorem ipsum Lorem ipsum<br>
+        Lorem ipsum Lorem ipsum</h4>    
+    <div class="row-start-4 ml-2">
+        <button class="ml-10 p-3 bg-gray-300 hover:bg-gray-100 text-black hover:text-gray-500 font-light text-lg rounded">CALL ACTION</button>
+    </div>
+   </div>
+
+<!-- afirmaciones de calidad    -->
+   <div class="grid grid-cols-1 md:grid-cols-3">
+    <span class="text-brown col-span-1 flex flex-col items-center text-sm md:text-base text-center p-7">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BB9979" class="w-6 h-6 md:w-12 md:h-12">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>          
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </span>
+    <span class="text-brown col-span-1 flex flex-col items-center text-sm md:text-base text-center p-7">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BB9979" class="w-6 h-6 md:w-12 md:h-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+          </svg>          
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </span>
+    <span class="text-brown col-span-1 flex flex-col items-center text-sm md:text-base text-center p-7">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BB9979" class="w-6 h-6 md:w-12 md:h-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
+          </svg>          
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.        
+    </span>
+   </div>
+
+
+
+<!-- testimonios -->
+   <div class="bg-image1 grid grid-cols-1 md:grid-cols-2">
+
+    <span class="grid grid-cols-1 p-5 sm:order-1 flex-md-row flex-sm-column">
+        <div class="bg-gray-400 bg-opacity-30 m-5 p-4 rounded-2xl flex  md:flex-row flex-col items-center">
+            <div class="flex-none md:w-20 md:h-20 md:order-1">
+                <img src="./img/avatar-generico.png" alt="avatar generico" class="w-20 h-20">
+            </div>
+            <div class="ml-4 flex flex-col items-center md:ml-0 md:order-2">
+                <p class="text-md text-center md:text-base">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                </p>
+                <p class="text-sm font-medium md:text-xs">
+                    Nombre apellido 
+                </p>
+                <p class="text-xs">
+                    -entidad-
+                </p>
+            </div>
+        </div>
+    </span>
+        
+
+    <span class="grid grid-cols-1 p-5 sm:order-1 flex-md-row flex-sm-column">
+        <div class="bg-gray-400 bg-opacity-30 m-5 p-4 rounded-2xl flex  md:flex-row flex-col items-center">
+            <div class="flex-none md:w-20 md:h-20 md:order-1">
+                <img src="./img/avatar-generico.png" alt="avatar generico" class="w-20 h-20">
+            </div>
+            <div class="ml-4 flex flex-col items-center md:ml-0 md:order-2">
+                <p class="text-md text-center md:text-base">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                </p>
+                <p class="text-sm font-medium md:text-xs">
+                    Nombre apellido 
+                </p>
+                <p class="text-xs">
+                    -entidad-
+                </p>
+            </div>
+        </div>
+    </span>
+
+   </div>
+
+<!-- cierre argumental    -->
+   <div class="bg-cierre flex justify-between items-center">
+    <h2 class="justify-start ml-4 text-white text-lg md:text-2xl">Cierre argumental</h2>
+    <img src="./img/logo-generico-w.png" alt="logo generico white" class="w-16 md:w-20 justify-end mr-4">
+   </div>
+
+<!-- foto final    -->
+   <div class="grid grid-cols-1 md:grid-cols-2">
+    <img src="./img/foto-generico.png" alt="foto generica" class="md:w-30 w-auto p-10">
+    <span>
+
+<!-- Formulario -->
+        <div class="bg-cierre m-10 rounded-xl pb-4">
+            <h2 class="mb-5 text-center">Formulario de consulta</h2>
+            <form action="#" method="post">
+
+                <div class="mb-4">
+                    <label for="nombre" class="block ml-8">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="ml-8 w-4/5 px-2 py-0 border rounded-sm focus:outline-none focus:border-yellow-900" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="apellido" class="block ml-8">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" class="ml-8 w-4/5 px-2 py-0 border rounded-sm focus:outline-none focus:border-yellow-900" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block ml-8">Correo electronico</label>
+                    <input type="text" id="email" name="email" class="ml-8 w-4/5 px-2 py-0 border rounded-sm focus:outline-none focus:border-yellow-900" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="opcion" class="ml-8">Opción</label>
+                    <div>
+                        <label for="opcion1">
+                            <input type="radio" name="radio-opc" value="op1" id="opcion1" class="ml-8">
+                            <span>opción 1</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="opcion2">
+                            <input type="radio" name="radio-opc" value="op2" id="opcion2" class="ml-8">
+                            <span>opción 2</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex items-end justify-end">
+                    <button type="submit" class="px-8 py-1 bg-white hover:bg-gray-100 text-black hover:text-gray-500 text-base rounded-xl mr-14">  
+                        Enviar                      
+                    </button>
+                </div>
+            </form>
+        </div>
+    </span>
+   </div>
+
+   <footer class="bg-cierre grid grid-cols-1 md:grid-cols-2 ">
+    <p class="ml-6 text-xs">todos los derechos reservados</p>
+    <p class="md:text-right md:mr-6 pl-6 text-xs">created by: codigo27</p>
+   </footer>
+   
+</body>
+</html>
